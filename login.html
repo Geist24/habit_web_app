@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Habit Tracker: Login</title>
+        <link rel="stylesheet" href="theme.css">
+        <title>Habit Tracker: Sign Up</title>
         <style>
         * {
             margin: 0;
@@ -11,34 +12,31 @@
 
     <body>
         
-        <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
-            <h1>Atomic Habits</h1>
+        <div id="header">
+             <h1>Atomic Habits</h1>
         </div>
 
-        <div style="display: flex; justify-content: center; align-items: center;">
+        <div style="height: 15vh">
             
-            <form style="display: flex; flex-direction: column; align-items: center;">
-                
-                <div>
+            <form>
+                <div style="height: 5vh">
                     <label for="Username" style="padding: 3px;">Username:</label>
                     <input type="text" id="Username" name="Username">
-
                 </div>
                 <br>
                 
-                <div>
+                <div style="height: 0vh">
                     <label for="Password" style="padding: 5px;">Password:</label>
                     <input type="password" id="Password" name="Password">
-
                 </div>
                 <br>
-                    <input type="submit" value="Submit" style="padding: 5px 15px; cursor: pointer;">
+                    <input type="submit" value="Log In" style="padding: 5px 15px; cursor: pointer;">
             </form>
         </div>
 
-        <div style="display: flex; justify-content: right; align-items: center; height: 50vh; padding-right: 50px;">
+        <div style="justify-content: right; padding-right: 50px;">
             <form action="home_page.html">            
-                <button type="sumbit" style="padding-inline: 50px">Back</button>
+            <button type="sumbit" style="padding-inline: 50px">Back</button>
             </form>
         </div>
     </body>

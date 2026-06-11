@@ -1,0 +1,35 @@
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 50vh;
+    background-color: grey;
+    background-image: url('runners.jpg'); 
+    background-size: cover;
+
+}
+
+h1{
+    font-family: georgia;
+    font-size: 96px;
+    color: whitesmoke;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 50vh;
+    background-color: rgb(19, 19, 19);
+}
+
+button{
+    padding-inline: 50px;
+    background-color: whitesmoke;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
