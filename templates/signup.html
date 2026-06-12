@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="theme.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}">
         <title>Habit Tracker: Sign Up</title>
         <style>
         * {
@@ -13,21 +13,21 @@
     <body>
         
         <div id="header">
-             <h1>Atomic Habits</h1>
+             <h1>Great Habits</h1>
         </div>
 
-        <div style="height: 15vh">
+        <div class="form-container" style="height: 15vh">
             
-            <form>
-                <div style="height: 5vh">
+            <form action="/signup" method="POST">
+                <div class="input-group" style="height: 5vh">
                     <label for="Username" style="padding: 3px;">Username:</label>
-                    <input type="text" id="Username" name="Username">
+                    <input type="text" id="Username" name="Username" required>
                 </div>
                 <br>
                 
-                <div style="height: 0vh">
+                <div class="input-group" style="height: 1vh">
                     <label for="Password" style="padding: 5px;">Password:</label>
-                    <input type="password" id="Password" name="Password">
+                    <input type="password" id="Password" name="Password" required>
                 </div>
                 <br>
                     <input type="submit" value="Sign Up" style="padding: 5px 15px; cursor: pointer;">
@@ -35,8 +35,8 @@
         </div>
 
         <div style="justify-content: right; padding-right: 50px;">
-            <form action="home_page.html">            
-            <button type="sumbit" style="padding-inline: 50px">Back</button>
+            <form action="/">            
+            <button type="submit" style="padding-inline: 50px; cursor: pointer;">Back</button>
             </form>
         </div>
     </body>

@@ -26,10 +26,21 @@ div{
 button{
     padding-inline: 50px;
     background-color: whitesmoke;
+    font-family: georgia;
 }
 
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+label{
+    font-family: georgia;
+    color: whitesmoke;
+}
+
+input{
+    font-family: georgia;
+
 }

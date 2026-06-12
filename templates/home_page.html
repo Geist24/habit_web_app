@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="theme.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}">
         <title>Habit Tracker</title>
         <style>
         *{
@@ -12,14 +12,14 @@
 
     <body>
         <div id="header">
-             <h1>Atomic Habits</h1>
+             <h1>Great Habits</h1>
         </div>
 
         <div style="gap: 525px">
-            <form action="login.html">            
+            <form action="/login" method="GET">            
                 <button type="sumbit">Login</button>
             </form>
-            <form action="singup.html">
+            <form action="/signup" method="GET">
                 <button type="sumbit">Sign Up</button>
             </form>
         </div> 
